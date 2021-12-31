@@ -8,6 +8,6 @@ target 'ios-navigation-integration' do
   # Pods for ios-navigation-integration
 		pod 'Mapbox-iOS-SDK', '~> 5.9'
     pod 'MapboxMobileEvents'
-    pod 'PoilabsNavigation'
+    pod 'PoilabsNavigation', '~> 2.6.1'
 
 end

@@ -2,12 +2,12 @@ PODS:
   - Mapbox-iOS-SDK (5.9.0):
     - MapboxMobileEvents (= 0.10.2)
   - MapboxMobileEvents (0.10.2)
-  - PoilabsNavigation (2.5.25)
+  - PoilabsNavigation (2.6.1)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 5.9)
   - MapboxMobileEvents
-  - PoilabsNavigation
+  - PoilabsNavigation (~> 2.6.1)
 
 SPEC REPOS:
   trunk:
@@ -18,8 +18,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: a5915700ec84bc1a7f8b3e746d474789e35b7956
   MapboxMobileEvents: 2bc0ca2eedb627b73cf403258dce2b2fa98074a6
-  PoilabsNavigation: 182fd121480bf2fcd12e8c80ec8fb57a33f30a85
+  PoilabsNavigation: 4bd5e8eaf2354fd02282e921ecf53c795866d609
 
-PODFILE CHECKSUM: 6301395a58d867ab2193d21bea284baf0b89d6b7
+PODFILE CHECKSUM: 3f5019e9939188956ab8470fba700081ea3e7341
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
