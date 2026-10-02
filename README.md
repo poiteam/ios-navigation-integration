@@ -4,20 +4,19 @@ Sample iOS app that integrates **PoilabsNavigation** with Swift Package Manager.
 
 ## INSTALLATION
 
+PoilabsNavigation is distributed with Swift Package Manager. CocoaPods is no longer supported.
+
 ### Swift Package Manager
 
 1. In Xcode, select **File > Add Package Dependencies...**
 2. Enter the repository URL: `https://github.com/poiteam/ios-navigation-pod.git`
 3. Choose **Exact Version** `7.3.1` and add the **PoilabsNavigation** product to your app target.
 
-The package contains PoilabsNavigation, PoilabsMapView, PoilabsCommon and Mapbox Maps 11.18.0. PoilabsPositioning, PoilabsSdkAnalytics and PoilabsCore are resolved automatically. Use either SPM or CocoaPods for Poilabs SDKs, not both in the same app.
+The package contains PoilabsNavigation, PoilabsMapView, PoilabsCommon and Mapbox Maps 11.18.0. PoilabsPositioning, PoilabsSdkAnalytics and PoilabsCore are resolved automatically.
 
-### CocoaPods
+### Migrating from CocoaPods
 
-``` ruby
-use_frameworks!
-pod 'PoilabsNavigation', :git => 'https://github.com/poiteam/ios-navigation-pod.git', :tag => '7.3.1'
-```
+Remove `pod 'PoilabsNavigation'` (and any `PoilabsCore`, `PoilabsPositioning` or `PoilabsSdkAnalytics` lines) from your `Podfile`, run `pod install` (or `pod deintegrate` if no other pods remain), then add the package as described above.
 
 ## PRE-REQUIREMENTS
 
