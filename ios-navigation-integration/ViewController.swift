@@ -21,24 +21,25 @@ class ViewController: UIViewController {
     }
 
     func loadMap() {
-        PLNNavigationSettings.sharedInstance().applicationId = "APPLICATION_ID"
-        PLNNavigationSettings.sharedInstance().applicationSecret = "APPLICATION_SECRET_KEY"
-        PLNNavigationSettings.sharedInstance()?.navigationUniqueIdentifier = "UNIQUE_ID"
+        let settings = PLNNavigationSettings.sharedInstance()
+        settings?.applicationId = "APPLICATION_ID"
+        settings?.applicationSecret = "APPLICATION_SECRET_KEY"
+        settings?.navigationUniqueIdentifier = "UNIQUE_ID"
+        // Supported languages: en, tr, hr, ar, de, ru, pl
+        settings?.applicationLanguage = "en"
 
         //Using custom user location icon
-        //PLNNavigationSettings.sharedInstance().customUserIcon = UIImage(named: "userLocation")
+        //settings?.customUserIcon = UIImage(named: "userLocation")
         
         
         //Start with active compass mode
-        //PLNNavigationSettings.sharedInstance().isCompassActive = true
+        //settings?.isCompassActive = true
         
         PLNavigationManager.sharedInstance()?.getReadyForStoreMap(completionHandler: { (error) in
             if error == nil {
                 let carrierView = PLNNavigationMapView(frame: CGRect(x: 0, y: 0, width: self.navigationView.bounds.size.width, height: self.navigationView.bounds.size.height))
                 carrierView.awakeFromNib()
                 carrierView.delegate = self
-                carrierView.searchBarBaseView.backgroundColor = UIColor.black
-                carrierView.searchCancelButton.setTitleColor(.white, for: .normal)
                 self.currentCarrier = carrierView
                 self.navigationView.addSubview(carrierView)
             } else {
