@@ -10,7 +10,7 @@ PoilabsNavigation is distributed with Swift Package Manager. CocoaPods is no lon
 
 1. In Xcode, select **File > Add Package Dependencies...**
 2. Enter the repository URL: `https://github.com/poiteam/ios-navigation-pod.git`
-3. Choose **Exact Version** `7.3.1` and add the **PoilabsNavigation** product to your app target.
+3. Choose **Exact Version** `7.3.2` and add the **PoilabsNavigation** product to your app target.
 
 The package contains PoilabsNavigation, PoilabsMapView, PoilabsCommon and Mapbox Maps 11.18.0. PoilabsPositioning, PoilabsSdkAnalytics and PoilabsCore are resolved automatically.
 
